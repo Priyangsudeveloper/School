@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -74,6 +74,16 @@
     #main-content.visible {
       opacity: 1;
     }
+
+    .ig-video-frame {
+      width: 100%;
+      min-height: 420px;
+      height: min(72vh, 760px);
+      border: 0;
+      border-radius: 1.5rem;
+      background: #0d0c0a;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    }
   </style>
 </head>
 <body class="selection:bg-[#dfc17b]/30 selection:text-[#7d5d14]">
@@ -107,8 +117,9 @@
         </span>
       </p>
 
-      <button id="open-gift-btn" type="button" class="group relative inline-flex items-center gap-3.5 px-8 sm:px-10 py-4 rounded-full bg-gradient-to-r from-[#b28a32] via-[#dfc17b] to-[#996515] text-[#141311] font-semibold text-sm sm:text-base tracking-wider uppercase transition-all duration-300 shadow-[0_0_25px_rgba(223,193,123,0.35)] hover:shadow-[0_0_40px_rgba(223,193,123,0.65)] hover:scale-105 active:scale-95 cursor-pointer">
-        <span class="font-serif font-bold tracking-widest text-[#141311]">Open Your Gift 🎁</span>
+      <button id="open-gift-btn" type="button" class="group relative inline-flex items-center gap-3.5 px-8 sm:px-10 py-4 rounded-full bg-gradient-to-r from-[#b28a32] via-[#dfc17b] to-[#996515] text-[#141311] shadow-[0_12px_35px_rgba(190,155,69,0.4)] transition-transform hover:scale-[1.02]">
+        <span class="inline-flex h-2.5 w-2.5 rounded-full bg-[#141311] opacity-90"></span>
+        <span class="font-serif font-bold tracking-widest">Open Your Gift 🎁</span>
       </button>
 
       <div class="mt-12 text-[11px] text-[#8c8577] tracking-widest uppercase font-serif">
@@ -149,6 +160,7 @@
       <section id="hero-section" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden paper-texture">
         <div class="max-w-5xl mx-auto px-6 text-center">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#b28a32]/30 bg-white/70 backdrop-blur-sm text-[#8a641a] text-xs font-serif tracking-[0.2em] uppercase mb-6 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-[#b28a32]"></span>
             <span>Honoring Lifelong Mentorship • 5th September</span>
           </div>
 
@@ -239,7 +251,34 @@
           <div id="timeline-container" class="space-y-16 md:space-y-28"></div>
         </div>
       </section>
-<footer id="closing-section" class="relative bg-[#0d0c0a] text-white py-24 px-6 overflow-hidden border-t border-[#b28a32]/25">
+
+      <section class="py-20 bg-[#171512] text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <div class="text-xs font-serif tracking-[0.35em] uppercase text-[#dfc17b] mb-5">
+            Tribute Video
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-serif text-[#f9f3ea] mb-6">
+            Watch the <span class="gold-text-gradient italic">special reel</span>
+          </h2>
+          <div class="mx-auto max-w-xl overflow-hidden rounded-[28px] border border-[#b28a32]/40 bg-[#0d0c0a] p-3 shadow-[0_25px_80px_rgba(0,0,0,0.35)]">
+            <iframe
+              class="ig-video-frame"
+              src="https://www.instagram.com/reel/Dc3K-qgAT-N/embed/"
+              title="Teacher's Day Tribute Reel"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="mt-6">
+            <a href="https://www.instagram.com/reel/Dc3K-qgAT-N/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-[#dfc17b]/60 bg-[#dfc17b]/10 px-6 py-3 text-sm font-serif tracking-[0.18em] uppercase text-[#f1dca0] transition hover:bg-[#dfc17b]/20">
+              Open on Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer id="closing-section" class="relative bg-[#0d0c0a] text-white py-24 px-6 overflow-hidden border-t border-[#b28a32]/25">
         <div class="max-w-4xl mx-auto text-center relative z-10">
           <div class="flex justify-center mb-8">
             <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-[#b28a32] via-[#dfc17b] to-[#8a641a] flex items-center justify-center shadow-[0_0_30px_rgba(223,193,123,0.5)] animate-pulse-subtle text-2xl">
@@ -262,10 +301,9 @@
           <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8c8577] font-serif">
             <div class="tracking-widest uppercase text-[11px] text-[#b28a32]">Made with Respect • For Our Teachers</div>
             <div>Happy Teacher’s Day • 5th September</div>
-        </div>
-        <div class="mt-5 text-[10px] text-[#8c8577] font-serif tracking-[0.18em] text-center">
-          C • Priyangsu Kundu
-        </div>
+          </div>
+          <div class="mt-5 text-[10px] text-[#8c8577] font-serif tracking-[0.18em] text-center">
+            C • Priyangsu Kundu
           </div>
         </div>
       </footer>
@@ -275,7 +313,7 @@
   <!-- Lightbox -->
   <div id="photo-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6" onclick="closeModal()">
     <div class="relative max-w-4xl w-full bg-[#171512] border border-[#b28a32]/40 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]" onclick="event.stopPropagation()">
-      <button type="button" onclick="closeModal()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white hover:text-[#dfc17b] flex items-center justify-center cursor-pointer">✕</button>
+      <button type="button" onclick="closeModal()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white hover:text-[#dfc17b] flex items-center justify-center cursor-pointer text-xl">×</button>
       <div class="w-full md:w-1/2 bg-[#0d0c0a] flex items-center justify-center p-6">
         <img id="modal-img" src="" alt="" class="max-w-full max-h-[60vh] object-contain rounded-xl border border-[#b28a32]/40">
       </div>
@@ -310,7 +348,6 @@
       "https://i.ibb.co/CpjDtfPN/789324778-1637996367993705-4650163048710789600-n.jpg",
       "https://i.ibb.co/qF0NNRnM/789923506-4563535517221535-8551918582648158794-n.jpg"
     ];
-
 
     const TEACHERS = [
       {
@@ -353,8 +390,8 @@
         id: 5,
         name: 'Soumajit Patra',
         role: 'Physical Science',
-        quote: 'Strict on the outside, pure gold on the inside. You kept us disciplined, but your brilliant teaching ignited our real spark for',
-        tribute: 'Strict on the outside, pure gold on the inside. You kept us disciplined, but your brilliant teaching ignited our real spark for',
+        quote: 'Strict on the outside, pure gold on the inside. You kept us disciplined, but your brilliant teaching ignited our real spark for knowledge and growth.',
+        tribute: 'Strict on the outside, pure gold on the inside. You kept us disciplined, but your brilliant teaching ignited our real spark for knowledge and growth.',
         image: TEACHER_IMAGES[4],
         rotation: '-2.2deg'
       },
@@ -394,12 +431,6 @@
         image: TEACHER_IMAGES[8],
         rotation: '-1.8deg'
       }
-    ];
-
-    const DEFAULT_WISHES = [
-      { name: "Priyanka", message: "Thank you for your endless patience and for making every classroom feel like a second home." },
-      { name: "Arif", message: "Your guidance shaped not only our marks, but our manners and our dreams. Happy Teacher's Day." },
-      { name: "Nusrat", message: "গুরুদেব, আপনার প্রতিটি উপদেশ আজও আমাদের পথ দেখায়। সশ্রদ্ধ প্রণাম।" }
     ];
 
     function initStars() {
@@ -515,13 +546,13 @@
       modal.classList.remove("flex");
       document.body.style.overflow = "";
     }
-document.addEventListener("DOMContentLoaded", () => {
+
+    document.addEventListener("DOMContentLoaded", () => {
       initStars();
       renderRibbon();
       renderTimeline();
       document.getElementById("open-gift-btn").addEventListener("click", openGift);
 
-      // Show the Welcome Teachers screen immediately, then open the main website automatically after 2 seconds.
       setTimeout(() => {
         openGift();
       }, 2000);
