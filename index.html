@@ -74,16 +74,6 @@
     #main-content.visible {
       opacity: 1;
     }
-
-    .ig-video-frame {
-      width: 100%;
-      min-height: 420px;
-      height: min(72vh, 760px);
-      border: 0;
-      border-radius: 1.5rem;
-      background: #0d0c0a;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-    }
   </style>
 </head>
 <body class="selection:bg-[#dfc17b]/30 selection:text-[#7d5d14]">
@@ -117,7 +107,7 @@
         </span>
       </p>
 
-      <button id="open-gift-btn" type="button" class="group relative inline-flex items-center gap-3.5 px-8 sm:px-10 py-4 rounded-full bg-gradient-to-r from-[#b28a32] via-[#dfc17b] to-[#996515] text-[#141311] shadow-[0_12px_35px_rgba(190,155,69,0.4)] transition-transform hover:scale-[1.02]">
+      <button id="open-gift-btn" type="button" class="group relative inline-flex items-center gap-3.5 px-8 sm:px-10 py-4 rounded-full bg-gradient-to-r from-[#b28a32] via-[#dfc17b] to-[#996515] text-[#171512] shadow-[0_14px_30px_rgba(182,138,50,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_40px_rgba(182,138,50,0.45)]">
         <span class="inline-flex h-2.5 w-2.5 rounded-full bg-[#141311] opacity-90"></span>
         <span class="font-serif font-bold tracking-widest">Open Your Gift 🎁</span>
       </button>
@@ -249,32 +239,6 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
           <div class="hidden md:block absolute left-1/2 -translate-x-1/2 top-4 bottom-12 w-[2px] bg-gradient-to-b from-[#dfc17b]/20 via-[#b28a32]/60 to-[#dfc17b]/20"></div>
           <div id="timeline-container" class="space-y-16 md:space-y-28"></div>
-        </div>
-      </section>
-
-      <section class="py-20 bg-[#171512] text-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-          <div class="text-xs font-serif tracking-[0.35em] uppercase text-[#dfc17b] mb-5">
-            Tribute Video
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-serif text-[#f9f3ea] mb-6">
-            Watch the <span class="gold-text-gradient italic">special reel</span>
-          </h2>
-          <div class="mx-auto max-w-xl overflow-hidden rounded-[28px] border border-[#b28a32]/40 bg-[#0d0c0a] p-3 shadow-[0_25px_80px_rgba(0,0,0,0.35)]">
-            <iframe
-              class="ig-video-frame"
-              src="https://www.instagram.com/reel/Dc3K-qgAT-N/embed/"
-              title="Teacher's Day Tribute Reel"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-          <div class="mt-6">
-            <a href="https://www.instagram.com/reel/Dc3K-qgAT-N/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-[#dfc17b]/60 bg-[#dfc17b]/10 px-6 py-3 text-sm font-serif tracking-[0.18em] uppercase text-[#f1dca0] transition hover:bg-[#dfc17b]/20">
-              Open on Instagram
-            </a>
-          </div>
         </div>
       </section>
 
